@@ -2,9 +2,16 @@ package rocks.zipcode.io.collections;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
-public class CollectionUtils {
+public class CollectionUtils <E>{
 
+    private Set<E> treeSet = new TreeSet<>();
+
+    public CollectionUtils(){
+        treeSet=null;
+    }
     /**
      * @param collection - object to be converted to list
      * @param <E>        - type of collection
@@ -36,6 +43,7 @@ public class CollectionUtils {
      * @return a single collection containing the aggregate contents of each collection passed in as an argument
      */
     public static Collection<?> flatten(Collection<?>... collections) {
+        
         return null;
     }
 }
